@@ -1,9 +1,12 @@
 import duckdb
 import logging
 
+# name files
 DB_FILE = "emissions.duckdb"
 LOG_FILE = "clean.log"
 
+
+# logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
@@ -80,14 +83,14 @@ def verify_queries(tbl: str, pickup_ts: str, dropoff_ts: str) -> dict:
 
 
 def clean_table(con, tbl: str, pickup_ts: str, dropoff_ts: str):
-    raw = con.execute(f"SELECT COUNT(*) FROM {tbl}").fetchone()[0]
-    con.execute(cleaning_sql(tbl, pickup_ts, dropoff_ts))
-    clean = con.execute(f"SELECT COUNT(*) FROM {tbl}").fetchone()[0]
+    raw = con.execute(f"SELECT COUNT(*) FROM {tbl}").fetchone()[0]  # before clean
+    con.execute(cleaning_sql(tbl, pickup_ts, dropoff_ts))  # run clean
+    clean = con.execute(f"SELECT COUNT(*) FROM {tbl}").fetchone()[0]  # after clean
     msg = f"{tbl} (raw): {raw:,} | (cleaned): {clean:,} | removed: {raw - clean:,}"
-    print(msg)
+    print(msg)  # let user know
     logger.info(msg)
 
-    print(f"Verification for {tbl}:")
+    print(f"Verification for {tbl}:")  # verify
     logger.info(f"Verification for {tbl}:")
     all_ok = True
     for name, q in verify_queries(tbl, pickup_ts, dropoff_ts).items():
@@ -96,7 +99,7 @@ def clean_table(con, tbl: str, pickup_ts: str, dropoff_ts: str):
         print(" ", line)
         logger.info(line)
         all_ok &= n == 0
-
+    # make sure all constraints are satisfied
     if all_ok:
         print(" ✅ All constraints satisfied.\n")
         logger.info("All constraints satisfied.")
@@ -105,6 +108,7 @@ def clean_table(con, tbl: str, pickup_ts: str, dropoff_ts: str):
         logger.warning("One or more constraints still present.")
 
 
+# main func
 def main():
     try:
         with duckdb.connect(DB_FILE, read_only=False) as con:

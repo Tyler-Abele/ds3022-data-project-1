@@ -6,6 +6,8 @@ import logging
 DB_FILE = "emissions.duckdb"
 LOG_FILE = "transform.log"
 
+
+# logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
@@ -14,6 +16,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+# Build features table with new columns
 def build_features(con, src, dst, pickup_col, dropoff_col, vehicle_type):
 
     sql = f"""
@@ -46,11 +49,12 @@ def build_features(con, src, dst, pickup_col, dropoff_col, vehicle_type):
     """
 
     con.execute(sql)
-    n = con.execute(f"SELECT COUNT(*) FROM {dst}").fetchone()[0]
-    logger.info(f"Built {dst} with {n:,} rows")
+    n = con.execute(f"SELECT COUNT(*) FROM {dst}").fetchone()[0]  # count rows
+    logger.info(f"Built {dst} with {n:,} rows")  # log it
     print(f"Built {dst}: {n:,} rows")
 
 
+# main transform function -- calls build_features twice once
 def main():
     try:
         with duckdb.connect(DB_FILE, read_only=False) as con:

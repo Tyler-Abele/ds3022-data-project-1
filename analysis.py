@@ -27,15 +27,18 @@ def one_heavy_light(con, cab, bucket_col, label, pickup_col):
         ORDER BY avg_co2 DESC
     """
     ).fetchdf()
-    heavy = df.iloc[0].to_dict() if len(df) else None
-    light = df.iloc[-1].to_dict() if len(df) else None
+    heavy = df.iloc[0].to_dict() if len(df) else None  # heaviest
+    light = df.iloc[-1].to_dict() if len(df) else None  # lightest
     print(f"{label} (heavy/light): {heavy} | {light}")
     logger.info(f"{cab} - {label}: heavy={heavy}, light={light}")
 
 
-def run_analysis():
+def run_analysis():  # main analysis function
     with duckdb.connect(DB_FILE, read_only=True) as con:
-        for cab in ["yellow", "green"]:
+        for cab in [
+            "yellow",
+            "green",
+        ]:  # loop over cab types since different column names
             print(f"\n=== {cab.upper()} ANALYSIS (2015-2024) ===")
             pickup_col = PICKUP[cab]
             dropoff_col = DROPOFF[cab]
@@ -54,7 +57,9 @@ def run_analysis():
             """
             ).fetchdf()
             print(f"{cab} - Largest carbon-producing trip:\n", res)
-            logger.info(f"{cab} - Largest trip: {res.to_dict(orient='records')}")
+            logger.info(
+                f"{cab} - Largest trip: {res.to_dict(orient='records')}"
+            )  # record it
 
             # 2–5) Heaviest/lightest by hour/day/week/month
             one_heavy_light(con, cab, "hour_of_day", "Hour of day", pickup_col)
@@ -62,6 +67,7 @@ def run_analysis():
             one_heavy_light(con, cab, "week_of_year", "Week of year", pickup_col)
             one_heavy_light(con, cab, "month_of_year", "Month", pickup_col)
 
+            # calculate monthly totals and plot
             res = con.execute(
                 f"""
             SELECT 
@@ -75,6 +81,7 @@ def run_analysis():
 
             plt.plot(res["year_month"], res["total_co2"], label=cab)
 
+        # plotting
         plt.xlabel("Month (1–12)")
         plt.ylabel("Total CO₂ (kg)")
         plt.title("Monthly CO₂ totals (2015–2024)")
