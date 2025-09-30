@@ -10,7 +10,7 @@
 *.csv
 
 # Ignore data folder
-data/
+/data/
 
 dbt/target/
 
