@@ -1,8 +1,8 @@
-name: 'taxi_co2'
-version: '1.0.0'
+name: "taxi_co2"
+version: "1.0.0"
 config-version: 2
 
-profile: 'taxi_co2'
+profile: "taxi_co2"
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]

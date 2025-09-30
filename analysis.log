@@ -1,0 +1,121 @@
+2025-09-29 14:29:02,869 - INFO - yellow_2024_features - Largest trip:    trip_distance  trip_co2_kgs tpep_pickup_datetime tpep_dropoff_datetime
+0          99.86       37.9468  2024-10-27 01:28:18   2024-10-27 03:25:43
+2025-09-29 14:29:02,899 - INFO - yellow_2024_features - Hours:    hour_of_day   avg_co2
+0            5  2.401934 heavy,     hour_of_day   avg_co2
+23           18  1.149817 light
+2025-09-29 14:29:02,921 - INFO - yellow_2024_features - Days:    day_of_week   avg_co2
+0            0  1.479009 heavy,    day_of_week  avg_co2
+6            6  1.21301 light
+2025-09-29 14:29:02,941 - INFO - yellow_2024_features - Weeks:    week_of_year   avg_co2
+0            35  1.489389 heavy,     week_of_year   avg_co2
+51            51  1.156989 light
+2025-09-29 14:29:02,962 - INFO - yellow_2024_features - Months:    month_of_year   avg_co2
+0              8  1.413284 heavy,     month_of_year   avg_co2
+11              2  1.223585 light
+2025-09-29 14:30:26,285 - INFO - yellow_2024_features - Largest trip:    trip_distance  trip_co2_kgs tpep_pickup_datetime tpep_dropoff_datetime
+0          99.86       37.9468  2024-10-27 01:28:18   2024-10-27 03:25:43
+2025-09-29 14:30:26,311 - INFO - yellow_2024_features - Hours:    hour_of_day   avg_co2
+0            5  2.401934 heavy,     hour_of_day   avg_co2
+23           18  1.149817 light
+2025-09-29 14:30:26,332 - INFO - yellow_2024_features - Days:    day_of_week   avg_co2
+0            0  1.479009 heavy,    day_of_week  avg_co2
+6            6  1.21301 light
+2025-09-29 14:30:26,353 - INFO - yellow_2024_features - Weeks:    week_of_year   avg_co2
+0            35  1.489389 heavy,     week_of_year   avg_co2
+51            51  1.156989 light
+2025-09-29 14:30:26,373 - INFO - yellow_2024_features - Months:    month_of_year   avg_co2
+0              8  1.413284 heavy,     month_of_year   avg_co2
+11              2  1.223585 light
+2025-09-29 17:22:48,442 - INFO - yellow_features - Largest trip: [{'trip_distance': 99.86, 'trip_co2_kgs': 37.9468, 'pickup_datetime': Timestamp('2024-10-27 01:28:18'), 'dropoff_datetime': Timestamp('2024-10-27 03:25:43')}]
+2025-09-29 17:22:48,467 - INFO - yellow_features - Hours:    hour_of_day   avg_co2
+0            5  2.407706 heavy,     hour_of_day   avg_co2
+23           18  1.147206 light
+2025-09-29 17:22:48,486 - INFO - yellow_features - Days:    day_of_week   avg_co2
+0            0  1.477218 heavy,    day_of_week  avg_co2
+6            6  1.21062 light
+2025-09-29 17:22:48,499 - INFO - yellow_features - Weeks:    week_of_year   avg_co2
+0            35  1.484196 heavy,     week_of_year   avg_co2
+51            51  1.152959 light
+2025-09-29 17:22:48,513 - INFO - yellow_features - Months:    month_of_year   avg_co2
+0              8  1.408941 heavy,     month_of_year  avg_co2
+11              2  1.22291 light
+2025-09-29 17:22:48,630 - INFO - green_features - Largest trip: [{'trip_distance': 99.28, 'trip_co2_kgs': 34.748, 'pickup_datetime': Timestamp('2024-02-28 11:11:12'), 'dropoff_datetime': Timestamp('2024-02-29 00:00:00')}]
+2025-09-29 17:22:48,635 - INFO - green_features - Hours:    hour_of_day   avg_co2
+0            4  1.480447 heavy,     hour_of_day  avg_co2
+23           18  0.91302 light
+2025-09-29 17:22:48,639 - INFO - green_features - Days:    day_of_week   avg_co2
+0            0  1.098995 heavy,    day_of_week   avg_co2
+6            4  0.977967 light
+2025-09-29 17:22:48,643 - INFO - green_features - Weeks:    week_of_year   avg_co2
+0            35  1.384265 heavy,     week_of_year   avg_co2
+51             3  0.886982 light
+2025-09-29 17:22:48,647 - INFO - green_features - Months:    month_of_year   avg_co2
+0              8  1.129348 heavy,     month_of_year   avg_co2
+11              1  0.913564 light
+2025-09-29 17:22:48,680 - INFO - Saved plot: monthly_co2.png
+2025-09-29 21:04:21,952 - INFO - yellow - Largest trip: [{'trip_distance': 100.0, 'trip_co2_kgs': 38.0, 'pickup_datetime': Timestamp('2015-12-28 01:56:29'), 'dropoff_datetime': Timestamp('2015-12-28 02:18:06')}]
+2025-09-29 21:04:22,437 - INFO - yellow - Hours:    hour_of_day   avg_co2
+0            5  1.849196 heavy,     hour_of_day  avg_co2
+24         <NA>      NaN light
+2025-09-29 21:04:22,818 - INFO - yellow - Days:    day_of_week   avg_co2
+0            0  1.275975 heavy,    day_of_week  avg_co2
+7         <NA>      NaN light
+2025-09-29 21:04:23,157 - INFO - yellow - Weeks:    week_of_year   avg_co2
+0            35  1.235345 heavy,     week_of_year  avg_co2
+53          <NA>      NaN light
+2025-09-29 21:04:23,434 - INFO - yellow - Months:    month_of_year   avg_co2
+0              8  1.208032 heavy,     month_of_year  avg_co2
+12           <NA>      NaN light
+2025-09-29 21:04:24,346 - INFO - yellow - Years:    year  avg_co2
+0  2032   8.8198 heavy,     year  avg_co2
+37  <NA>      NaN light
+2025-09-29 21:04:24,888 - INFO - green - Largest trip: [{'trip_distance': 99.97, 'trip_co2_kgs': 34.9895, 'pickup_datetime': Timestamp('2015-07-14 14:20:32'), 'dropoff_datetime': Timestamp('2015-07-14 16:39:22')}]
+2025-09-29 21:04:24,930 - INFO - green - Hours:    hour_of_day   avg_co2
+0            5  1.544032 heavy,     hour_of_day   avg_co2
+23           18  0.899015 light
+2025-09-29 21:04:24,964 - INFO - green - Days:    day_of_week   avg_co2
+0            0  1.082011 heavy,    day_of_week   avg_co2
+6            2  1.004046 light
+2025-09-29 21:04:24,994 - INFO - green - Weeks:    week_of_year  avg_co2
+0            35  1.10514 heavy,     week_of_year   avg_co2
+52             5  0.980013 light
+2025-09-29 21:04:25,017 - INFO - green - Months:    month_of_year   avg_co2
+0              8  1.065723 heavy,     month_of_year   avg_co2
+11              1  0.989665 light
+2025-09-29 21:04:25,096 - INFO - green - Years:    year  avg_co2
+0  2081   5.9325 heavy,     year  avg_co2
+16  2030  0.19425 light
+2025-09-29 21:04:25,152 - INFO - Saved plot: monthly_co2.png
+2025-09-29 21:38:59,412 - INFO - yellow - Largest trip: [{'trip_distance': 100.0, 'trip_co2_kgs': 38.0, 'pickup_datetime': Timestamp('2015-12-28 01:56:29'), 'dropoff_datetime': Timestamp('2015-12-28 02:18:06')}]
+2025-09-29 21:39:00,329 - INFO - yellow - Hour of day: heavy={'bucket': 5.0, 'avg_co2': 1.849195017611784}, light={'bucket': 9.0, 'avg_co2': 1.021881359500364}
+2025-09-29 21:39:01,031 - INFO - yellow - Day of week: heavy={'bucket': 0.0, 'avg_co2': 1.2759746156744798}, light={'bucket': 6.0, 'avg_co2': 1.1134188977815207}
+2025-09-29 21:39:01,559 - INFO - yellow - Week of year: heavy={'bucket': 35.0, 'avg_co2': 1.2353454953339928}, light={'bucket': 5.0, 'avg_co2': 1.0617867221453967}
+2025-09-29 21:39:02,032 - INFO - yellow - Month: heavy={'bucket': 8.0, 'avg_co2': 1.208031777102499}, light={'bucket': 2.0, 'avg_co2': 1.094731419480448}
+2025-09-29 21:39:02,896 - INFO - green - Largest trip: [{'trip_distance': 99.97, 'trip_co2_kgs': 34.9895, 'pickup_datetime': Timestamp('2015-07-14 14:20:32'), 'dropoff_datetime': Timestamp('2015-07-14 16:39:22')}]
+2025-09-29 21:39:02,954 - INFO - green - Hour of day: heavy={'bucket': 5.0, 'avg_co2': 1.5440382567408857}, light={'bucket': 18.0, 'avg_co2': 0.8990141891252327}
+2025-09-29 21:39:03,002 - INFO - green - Day of week: heavy={'bucket': 0.0, 'avg_co2': 1.0820113685821822}, light={'bucket': 2.0, 'avg_co2': 1.0040450584121128}
+2025-09-29 21:39:03,043 - INFO - green - Week of year: heavy={'bucket': 35.0, 'avg_co2': 1.1051397884052845}, light={'bucket': 5.0, 'avg_co2': 0.9800133926291728}
+2025-09-29 21:39:03,077 - INFO - green - Month: heavy={'bucket': 8.0, 'avg_co2': 1.065723271907531}, light={'bucket': 1.0, 'avg_co2': 0.9896433469325554}
+2025-09-29 21:39:03,171 - INFO - Saved plot: monthly_co2.png
+2025-09-29 21:47:41,898 - INFO - yellow - Largest trip: [{'trip_distance': 100.0, 'trip_co2_kgs': 38.0, 'pickup_datetime': Timestamp('2015-12-28 01:56:29'), 'dropoff_datetime': Timestamp('2015-12-28 02:18:06')}]
+2025-09-29 21:47:42,845 - INFO - yellow - Hour of day: heavy={'bucket': 5.0, 'avg_co2': 1.8491950176117808}, light={'bucket': 9.0, 'avg_co2': 1.02188135950037}
+2025-09-29 21:47:43,492 - INFO - yellow - Day of week: heavy={'bucket': 0.0, 'avg_co2': 1.2759746156744887}, light={'bucket': 6.0, 'avg_co2': 1.1134188977815194}
+2025-09-29 21:47:44,048 - INFO - yellow - Week of year: heavy={'bucket': 35.0, 'avg_co2': 1.2353454953339917}, light={'bucket': 5.0, 'avg_co2': 1.061786722145377}
+2025-09-29 21:47:44,568 - INFO - yellow - Month: heavy={'bucket': 8.0, 'avg_co2': 1.2080317771024986}, light={'bucket': 2.0, 'avg_co2': 1.0947314194804434}
+2025-09-29 21:47:45,374 - INFO - green - Largest trip: [{'trip_distance': 99.97, 'trip_co2_kgs': 34.9895, 'pickup_datetime': Timestamp('2015-07-14 14:20:32'), 'dropoff_datetime': Timestamp('2015-07-14 16:39:22')}]
+2025-09-29 21:47:45,434 - INFO - green - Hour of day: heavy={'bucket': 5.0, 'avg_co2': 1.544038256740883}, light={'bucket': 18.0, 'avg_co2': 0.8990141891252342}
+2025-09-29 21:47:45,483 - INFO - green - Day of week: heavy={'bucket': 0.0, 'avg_co2': 1.0820113685821824}, light={'bucket': 2.0, 'avg_co2': 1.0040450584121128}
+2025-09-29 21:47:45,524 - INFO - green - Week of year: heavy={'bucket': 35.0, 'avg_co2': 1.1051397884052898}, light={'bucket': 5.0, 'avg_co2': 0.9800133926291751}
+2025-09-29 21:47:45,560 - INFO - green - Month: heavy={'bucket': 8.0, 'avg_co2': 1.0657232719075334}, light={'bucket': 1.0, 'avg_co2': 0.9896433469325548}
+2025-09-29 21:47:45,645 - INFO - Saved plot: monthly_co2.png
+2025-09-29 21:48:01,644 - INFO - yellow - Largest trip: [{'trip_distance': 100.0, 'trip_co2_kgs': 38.0, 'pickup_datetime': Timestamp('2015-12-28 01:56:29'), 'dropoff_datetime': Timestamp('2015-12-28 02:18:06')}]
+2025-09-29 21:48:02,404 - INFO - yellow - Hour of day: heavy={'bucket': 5.0, 'avg_co2': 1.8491950176117846}, light={'bucket': 9.0, 'avg_co2': 1.0218813595003633}
+2025-09-29 21:48:03,044 - INFO - yellow - Day of week: heavy={'bucket': 0.0, 'avg_co2': 1.2759746156745129}, light={'bucket': 6.0, 'avg_co2': 1.113418897781549}
+2025-09-29 21:48:03,634 - INFO - yellow - Week of year: heavy={'bucket': 35.0, 'avg_co2': 1.2353454953339837}, light={'bucket': 5.0, 'avg_co2': 1.0617867221453892}
+2025-09-29 21:48:04,163 - INFO - yellow - Month: heavy={'bucket': 8.0, 'avg_co2': 1.208031777102498}, light={'bucket': 2.0, 'avg_co2': 1.094731419480452}
+2025-09-29 21:48:04,941 - INFO - green - Largest trip: [{'trip_distance': 99.97, 'trip_co2_kgs': 34.9895, 'pickup_datetime': Timestamp('2015-07-14 14:20:32'), 'dropoff_datetime': Timestamp('2015-07-14 16:39:22')}]
+2025-09-29 21:48:05,003 - INFO - green - Hour of day: heavy={'bucket': 5.0, 'avg_co2': 1.5440382567408806}, light={'bucket': 18.0, 'avg_co2': 0.8990141891252369}
+2025-09-29 21:48:05,052 - INFO - green - Day of week: heavy={'bucket': 0.0, 'avg_co2': 1.082011368582186}, light={'bucket': 2.0, 'avg_co2': 1.0040450584121177}
+2025-09-29 21:48:05,092 - INFO - green - Week of year: heavy={'bucket': 35.0, 'avg_co2': 1.1051397884052856}, light={'bucket': 5.0, 'avg_co2': 0.9800133926291709}
+2025-09-29 21:48:05,142 - INFO - green - Month: heavy={'bucket': 8.0, 'avg_co2': 1.0657232719075358}, light={'bucket': 1.0, 'avg_co2': 0.989643346932531}
+2025-09-29 21:48:05,227 - INFO - Saved plot: monthly_co2.png
