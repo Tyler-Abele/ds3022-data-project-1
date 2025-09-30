@@ -12,7 +12,9 @@
 # Ignore data folder
 data/
 
-dbt/target/.user.yml
+dbt/target/
+
+dbt/.user.yml
 
 # Ignore macOS system file
 .DS_Store
