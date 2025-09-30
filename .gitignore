@@ -1,0 +1,19 @@
+# Ignore log files
+*.log
+
+# Ignore databases
+*.db
+*.duckdb
+
+# Ignore parquet + csv files
+*.parquet
+*.csv
+
+# Ignore data folder
+data/
+
+# Ignore specific file
+*.yml
+
+# Ignore macOS system file
+.DS_Store
