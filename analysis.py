@@ -18,7 +18,7 @@ DROPOFF = {"yellow": "tpep_dropoff_datetime", "green": "lpep_dropoff_datetime"}
 def one_heavy_light(con, cab, bucket_col, label, pickup_col):
     df = con.execute(
         f"""
-        SELECT {bucket_col} AS bucket, AVG(trip_co2_kgs) AS avg_co2
+        SELECT {bucket_col} AS bucket, AVG(trip_co2_kgs) AS avg_co2 -- find average
         FROM {cab}
         WHERE {pickup_col} IS NOT NULL
           AND EXTRACT(YEAR FROM {pickup_col}) BETWEEN 2015 AND 2024
